@@ -2,7 +2,7 @@
 Imports System.Data.SqlClient
 Imports System.Configuration
 Module ConexionMaestra
-    Public conexion As New SqlConnection()
+    Public conexion As New SqlConnection("Server=NICOLASL\SQLEXPRESS ;Database=PELUQUERIA_CRUD ;User Id= sa ;Password= 123456789")
 
     Sub Abrir_Conexion()
         If conexion.State = 0 Then
